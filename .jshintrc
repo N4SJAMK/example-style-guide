@@ -1,0 +1,18 @@
+{
+	"asi":    true,
+	"node":   true,
+	"strict": true,
+
+	"newcap":    true,
+	"camelcase": true,
+
+	"eqnull": true,
+	"eqeqeq": true,
+
+	"maxlen":   80,
+	"quotmark": "single",
+
+	"undef":   true,
+	"unused":  true,
+	"latedef": true
+}
