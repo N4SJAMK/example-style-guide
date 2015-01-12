@@ -13,6 +13,5 @@
 	"quotmark": "single",
 
 	"undef":   true,
-	"unused":  true,
-	"latedef": true
+	"unused":  true
 }
