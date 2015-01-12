@@ -1,7 +1,11 @@
 'use strict';
 
-var User = require('./models/user');
-var user = new User('root', 10);
+var request = require('./utils/request');
 
-console.assert(user.triage() === 30 && user.age === 30);
-console.assert(user.rename('markku') === 'markku' && user.name === 'markku');
+request('todos').then(
+	function onTodos(todos) {
+		console.log(todos);
+	},
+	function onError(err) {
+		console.log(err);
+	});
