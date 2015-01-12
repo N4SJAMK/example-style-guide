@@ -1,9 +1,14 @@
 {
-  "name": "flow-test",
+  "name": "style-guide",
   "devDependencies": {
     "gulp": "^3.8.10",
     "gulp-jscs": "^1.4.0",
     "gulp-jshint": "^1.9.0",
     "jshint-stylish": "^1.0.0"
+  },
+  "dependencies": {
+    "promise": "^6.0.1",
+    "request": "^2.51.0",
+    "safe-json-parse": "^2.0.0"
   }
 }
