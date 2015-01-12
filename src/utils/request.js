@@ -7,18 +7,18 @@ var HTTPError = require('./http-error');
 
 var BASE_URL = 'http://jsonplaceholder.typicode.com/';
 
-module.exports = function rsvp(endpoint) {
+module.exports = function(endpoint) {
 	return new RSVP(function(resolve, reject) {
-		request.get(BASE_URL + endpoint, function res(err, res, body) {
+		request.get(BASE_URL + endpoint, function(err, res, body) {
 			if(err) {
 				return reject(err);
 			}
 
-			if(res.statusCode != 200) {
+			if(res.statusCode !== 200) {
 				return reject(new HTTPError(res.statusCode, res.text));
 			}
 
-			parse(body, function onJSON(err, json) {
+			parse(body, function(err, json) {
 				if(err) {
 					return reject(err);
 				}
